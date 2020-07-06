@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CONTACT</title>
+	<link rel="icon" href="Images/titlelogo.png">
+	<link rel="stylesheet" href="CSS/contact.css">
+	<script src="JS/contact.js"></script>
+	<script src="https://kit.fontawesome.com/d965387991.js" crossorigin="anonymous"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div id="top" class="container-fluid">
+			<div class="row">
+				<div class="col-0 col-sm-0 col-lg-1"></div>
+				<div id="topleft" class="col-12 col-sm-5 col-lg-3 text-center">
+					<a target="_blank" href="https://www.instagram.com/sahil_mishra25/"><i class="fab fa-instagram"></i></a>
+					<a target="_blank" href="https://www.facebook.com/sahil.mishra.5283166/"><i class="fab fa-facebook-square"></i></a>
+					<a target="_blank" href="https://twitter.com/sahil_mishra25"><i class="fab fa-twitter-square"></i></a>
+					<a target="_blank" href="https://www.linkedin.com/in/sahilmishra25/"><i class="fab fa-linkedin"></i></a>
+			    </div>
+			    <div id="topright" class="col-12 col-sm-7 col-lg-7 text-center">
+			    	<a href="mailto:sahil.mishra250498@gmail.com"><i class="fas fa-envelope"></i>  sahil.mishra250498@gmail.com</a>
+			    	<a href="tel:+917838174785"><i class="fas fa-phone-alt"></i>  +91-9999999999</a>
+			    </div>
+			</div>
+		</div>
+		<nav id="navigation" class="navbar navbar-expand-sm">
+			<!-- brand logo -->
+			<a class="navbar-brand" href="index.html">Sahil<span>Mishra</span></a>
+			<!-- links -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fas fa-bars"></i></button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="diet.html" id="navbardrop" data-toggle="dropdown">DIET & NUTRITION</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="diet.html">DIET</a>
+							<a class="dropdown-item" href="suppliment.html">SUPPLIMENT</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a id="act" class="nav-link" href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<form>
+			<fieldset>
+				<legend><h2>CONTACT ME</h2></legend>
+				<div class="form-group row">
+					<label for="name" class="col-12 col-sm-4 col-lg-2 col-form-label">Name:</label>
+					<div class="col-12 col-sm-4 col-lg-4">
+						<input type="text" class="form-control" name="fname" id="name" placeholder="First name" required>
+					</div>
+					<div class="col-12 col-sm-4 col-lg-4">
+						<input type="text" class="form-control" name="lname" placeholder="Last name" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="email" class="col-12 col-sm-4 col-lg-2 col-form-label">Email:</label>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
+						<input type="email" class="form-control" name="email" id="email" placeholder="example@xmail.com" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="cnfemail" class="col-12 col-sm-4 col-lg-2 col-form-label">Confirm Email:</label>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
+						<input type="password" class="form-control" name="cnfemail" id="cnfemail" onchange="emailcheck()" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="mobnumber" class="col-12 col-sm-4 col-lg-2 col-form-label">Mobile No. :</label>
+					<div class="col-3 col-sm-2 col-lg-2 col-xl-1">
+						<input type="text" readonly class="form-control text-center" value="+91">
+					</div>
+					<div class="col-9 col-sm-6 col-md-4 col-lg-3">
+						<input type="tel" class="form-control" name="mobnumber" id="mobnumber" pattern="^[789]\d{9}$" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-form-label col-12 col-sm-4 col-lg-2 pt-0">Gender:</label>
+					<div class="col-12 col-sm-8 col-lg-10">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+							<label class="form-check-label" for="male">Male</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+							<label class="form-check-label" for="female">Female</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="age" class="col-12 col-sm-4 col-lg-2 col-form-label">Age:</label>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<input type="number" class="form-control" name="age" id="age" min="16" required>
+						<small id="age-field" class="form-text text-muted">Should be above 16</small>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="weight" class="col-12 col-sm-4 col-lg-2 col-form-label">Weight:</label>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<input type="number" class="form-control" name="weight" id="weight" min="30" placeholder="in Kgs" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="height" class="col-12 col-sm-4 col-lg-2 col-form-label">Height:</label>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<input type="number" class="form-control" name="feet" id="height" placeholder="Feet" required>
+					</div>
+					<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+						<input type="number" class="form-control" name="inch" id="inch" placeholder="Inches" onchange="return heightcheck()" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-form-label col-12 col-sm-4 col-lg-2 pt-0">Consulating for:</label>
+					<div class="col-12 col-sm-8 col-lg-10">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="Yoga" name="yoga" id="yoga">
+							<label class="form-check-label" for="yoga">Yoga</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="Weightlifting" name="weightlifting" id="weightlifting" checked>
+							<label class="form-check-label" for="weightlifting">Weightlifting</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="Calisthenics" name="calisthenics" id="calisthenics">
+							<label class="form-check-label" for="calisthenics">Calisthenics</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="Diet" name="diet" id="diet" checked>
+							<label class="form-check-label" for="diet">Diet</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="Suppliment" name="suppliment" id="suppliment">
+							<label class="form-check-label" for="suppliment">Suppliment</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="apptdate" class="col-12 col-sm-4 col-lg-2 col-form-label">Appointment date:</label>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
+						<input type="date" class="form-control" name="apptdate" id="apptdate" required>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="appttime" class="col-12 col-sm-4 col-lg-2 col-form-label">Appointment time:</label>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-4">
+						<select class="form-control" id="appttime" required>
+							<option value="">Select a timing</option>
+							<option value="Morning">Morning 6-8 am</option>
+							<option value="Evening">Evening 9-11 pm</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-form-label col-4 col-sm-4 col-lg-2 pt-0">Subscribe Newsletter:</label>
+				    <div class="col-1">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="Yes" name="Newsletter" id="nwsltrcheck">
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<button onclick="return finalcheck()" type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
+				</div>
+			</fieldset>
+		</form>
+	</main>
+
+	<footer>
+		<div id="bottom" class="container-fluid">
+			<div id="arrow" class="row">
+				<a href="#top" class="col-12 text-center"><i class="fas fa-arrow-circle-up"></i></a>
+		    </div>
+			<div class="row">
+				<div id="abt" class="col-12 col-sm-6 col-lg-4 text-center">
+					<h2 class="col-12">About</h2>
+					<p>I am a certified fitness and sports nutritionist and a bodybuilding Enthusiast!! Academics wise i'm a 4th Year student pursuing my Bachelor's in Information Technology. I am highly skilled in HTML5, CSS3, JavaScript and Responsive design using BOOTSTRAP 4. Currently inclined towards Data science, Machine learning and Artificial intelligence. I also have deep interest in subjects like astrophysics and cosmology!</p>
+					<button class="btn-lg btn-primary col-6" onclick="window.location.href='about.html'">MORE</button>
+				</div>
+				<div id="Qmenu" class="col-12 col-sm-6 col-lg-4 text-center">
+					<h2 class="col-12">Quick Menu</h2>
+					<button class="btn-lg btn-primary col-6" onclick="window.location.href='diet.html'">DIET</button>
+					<button class="btn-lg btn-primary col-6" onclick="window.location.href='suppliment.html'">SUPPLIMENTS</button>
+				</div>
+				<div id="cnt" class="col-12 col-sm-12 col-lg-4 text-center">
+					<h2 class="col-12">Contact</h2>
+					<a class="col-12" href="tel:+917838174785"><cite>Tel:</cite>+91-9999999999</a>
+					<a class="col-12" href="mailto:sahil.mishra250498@gmail.com"><cite>Mail:</cite>sahil.mishra250498@gmail.com</a>
+					<div id="bottomicon" class="col-12">
+						<a target="_blank" href="https://www.instagram.com/sahil_mishra25/"><i class="fab fa-instagram"></i></a>
+						<a target="_blank" href="https://www.facebook.com/sahil.mishra.5283166/"><i class="fab fa-facebook-square"></i></a>
+						<a target="_blank" href="https://twitter.com/sahil_mishra25"><i class="fab fa-twitter-square"></i></a>
+						<a target="_blank" href="https://www.linkedin.com/in/sahilmishra25/"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
